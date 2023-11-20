@@ -6,8 +6,14 @@ export type FirstFormOrder = {
 }
 
 export type SecondFormOrder = {
+    color?: string
+    qty?: number
+    printType?: string
+    material?: string
+}
+
+export type OrderDetail = {
     name?: string
-    address?: string
-    number?: number
-    org?: string
+    size?: string
+    longSleeve?: boolean
 }

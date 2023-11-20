@@ -11,7 +11,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({color, type, label, name, onClick}) => {
     return (
-        <button type={type} id={name} className={'btn btn-' + color} onClick= {onClick}>
+        <button type={type} id={name} className={'btn btn-primary m-[100px]' + color} onClick= {onClick}>
             {label}
         </button>
     )
