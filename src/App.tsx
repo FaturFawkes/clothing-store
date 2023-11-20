@@ -1,7 +1,8 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom" 
 import React, {Component} from "react"
 import './App.css'
-import {Home} from './pages/Home'
+import Order from "./pages/Order"
+import Home from "./pages/Home"
 
 export class App extends Component {
   render() {
@@ -9,6 +10,7 @@ export class App extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/order-baju" element={<Order/>} />
         </Routes>
       </BrowserRouter>
     )
